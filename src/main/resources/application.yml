@@ -6,4 +6,19 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/rafa-andrade/spring-cloud-config
+          uri: https://rrrprojetos@bitbucket.org/rrr-team/consultorio-config.git
+          username: rrrprojetos
+          password: w8921e937eh328rh4398rh438rj498dj8294hd28hd3289hd
+
+eureka:
+  client:
+    enabled: true
+    registerWithEureka: true
+    fetchRegistry: true
+    registryFetchIntervalSeconds: 3
+    serviceUrl:
+      defaultZone: http://localhost:9090/eureka/
+  instance:
+    preferIpAddress: true
+    leaseRenewalIntervalInSeconds: 3
+    leaseExpirationDurationInSeconds: 10
